@@ -1,5 +1,4 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+{{#basic-dropdown calculatePosition=calculatePosition as |dd|}}
+  {{#dd.trigger}}Click me{{/dd.trigger}}
+  {{#dd.content}}Content{{/dd.content}}
+{{/basic-dropdown}}
